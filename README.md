@@ -20,13 +20,11 @@ Form handling memakai **React Hook Form** dan validasi menggunakan **Zod**. Styl
    git clone <url-repository>
    cd <nama-folder-proyek>
    ```
-2. Create & update env file (URL, Anon Key)
-   for NEXT_PUBLIC_SUPABASE_URL: https://pevicrgnxjhfefmtnltr.supabase.co
-   for NEXT_PUBLIC_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBldmljcmdueGpoZmVmbXRubHRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgwMDgzNDksImV4cCI6MjA2MzU4NDM0OX0.k9BqR0fxlQqtRLcWq0lh-wfnw1mUQxatgwwUTVlB5uM
+2. Update env file (URL, Anon Key)
 
 3. Run npm install to install all dependencies
 
-4. For running this app using npm dev
+4. For running this app using npm run dev
 
 5. For testing using npm run test
    If you want to specific test, you can type npm run test (name file). It's inside test folder.
