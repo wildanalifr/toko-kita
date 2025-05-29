@@ -45,6 +45,8 @@ export default function PembelianFormPage() {
   const onSubmit = async (data: tPembelianSchema) => {
     setIsLoading(true)
 
+    console.log('data input', data)
+
     try {
       const { error, status } = await createPembelian({
         barang_id: data.barang_id,
@@ -116,7 +118,7 @@ export default function PembelianFormPage() {
         )}
 
         <input
-          type="date"
+          type="datetime-local"
           {...register('tanggal')}
           className="w-full p-2 rounded bg-gray-800"
         />
