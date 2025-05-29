@@ -10,7 +10,6 @@ export function hitungHPP({
   tmpHPP: number
   arr: tPembelianSchema[]
 } {
-  console.log('arr', arr)
   const totalAvailable = arr.reduce((acc, item) => acc + item.qty, 0)
   if (qty > totalAvailable) {
     throw new Error('Stok tidak mencukupi')
