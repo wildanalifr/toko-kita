@@ -41,8 +41,11 @@ export const getBarangPembelian = async (barang_id: string) => {
   const { data } = await supabase
     .from('pembelian')
     .select('*')
-    .order('tanggal')
+    .order('tanggal', { ascending: true })
     .eq('barang_id', barang_id)
 
-  return data
+  // this function make sure not get data if item.qty_terpakai is not full
+  const filtered = data?.filter((item) => item.qty > item.qty_terpakai)
+
+  return filtered
 }
