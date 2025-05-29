@@ -15,12 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <NotificationProvider>
-        <body className="flex h-screen">
+      <body className="flex h-screen">
+        <NotificationProvider>
           <Sidebar />
           <main className="flex-1 overflow-y-auto p-6">{children}</main>
-        </body>
-      </NotificationProvider>
+        </NotificationProvider>
+      </body>
     </html>
   )
 }
